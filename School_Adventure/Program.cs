@@ -8,14 +8,16 @@ namespace School_Adventure
 {
     class Program
     {
-
-        private static int[] szamok = new int[10];
-
         static void Main(string[] args)
         {
+            int darabszam;
             int beker;
             int max = 0;
-            for (int i = 0; i < 10; i++)
+            Console.Write("Adja meg hány számot szeretne megadni: ");
+            darabszam = Convert.ToInt32(Console.ReadLine());
+            int[] szamok = new int[darabszam];
+
+            for (int i = 0; i < szamok.Length; i++)
             {
                 Console.Write("Adja meg a/az {0}. számot:",i+1);
                 beker = Convert.ToInt32(Console.ReadLine());
