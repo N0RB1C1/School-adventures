@@ -33,7 +33,7 @@ namespace School_Adventure
                 }
             }
             Console.Write("A legnagyobb elem: {0}", max);
-            Console.ReadKey();
+            Console.ReadLine();
 
         }
     }
